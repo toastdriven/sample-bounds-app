@@ -1,0 +1,15 @@
+bounds:
+  account: daniel
+
+  services:
+    # Provide the <app> name here.
+    daniel-app:
+      source_repo: https://github.com/toastdriven/sample-bounds-app
+      build:
+        # template_repo: https://github.com/toastdriven/bounds-python
+        # ...or if you can't be bothered to pick...
+        layout: python
+      environment:
+        - BOUNDS_HOST=0.0.0.0
+        - BOUNDS_PORT=8080
+        - LMAO_SECRET=teehee-so-secret
